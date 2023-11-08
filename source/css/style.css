@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.header-content {
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 0.75rem 1rem;
+}
+
+.header-content .website {
+    align-items: center;
+    display: flex;
+}
+
+.header-content .website .logo {
+    height: 2.5rem;
+    margin-right: 1rem;
+    width: 2.5rem;
+}
+
+.header-content .website .title {
+    color: #3c3c3c;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
