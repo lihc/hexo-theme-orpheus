@@ -16,6 +16,8 @@ header {
 }
 
 .header-content {
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 80rem;
     padding: 0.75rem 1rem;
@@ -37,4 +39,21 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
+}
+
+.header-content .webmenu {
+    align-items: center;
+    display: flex;
+}
+.header-content .webmenu ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-content .webmenu .menu-item a {
+    color: #4f4f4f;
+    font-weight: 600;
+    padding: 0.5rem;
+    text-decoration: none;
+    white-space: nowrap;
 }
