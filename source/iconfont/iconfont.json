@@ -1,0 +1,23 @@
+{
+  "id": "4336407",
+  "name": "orpheus",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1713209",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "10063219",
+      "name": "菜单",
+      "font_class": "NMStubiao-",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    }
+  ]
+}

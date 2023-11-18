@@ -5,13 +5,26 @@
             <a class="title" href="/"><%= config.title %></a>
         </div>
         <nav class="webmenu">
-            <ul style="white-space: nowrap;">
+            <ul id="nav-menu" style="white-space: nowrap;">
             <%_ for (var menu in theme.menus){ -%>
                 <li class="menu-item">
                     <a href="<%= theme.menus[menu] %>"><%= menu.charAt(0).toUpperCase() + menu.slice(1) %></a>
                 </li>
             <%_ } -%>
             </ul>
+            <button id="nav-button-in" class="menu-button" style="display: none;">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-caidan"></use>
+                </svg>
+            </button>
+            <div id="mobile-side" class="mobile-side" style="display: none;">
+                <button id="nav-button-out" class="menu-button">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-caidan"></use>
+                    </svg>
+                </button>
+                <nav id="mobile-nav"></nav>
+            </div>
         </nav>
     </div>
 </header>
