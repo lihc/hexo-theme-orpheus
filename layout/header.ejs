@@ -4,7 +4,7 @@
             <img class="logo" src="<%= theme.logo %>">
             <a class="title" href="/"><%= config.title %></a>
         </div>
-        <nav class="webmenu">
+        <nav id="window-nav" class="webmenu">
             <ul id="nav-menu" style="white-space: nowrap;">
             <%_ for (var menu in theme.menus){ -%>
                 <li class="menu-item">
@@ -23,7 +23,7 @@
                         <use xlink:href="#icon-caidan"></use>
                     </svg>
                 </button>
-                <nav id="mobile-nav"></nav>
+                <nav id="mobile-nav" class="mobile-nav"></nav>
             </div>
         </nav>
     </div>

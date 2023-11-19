@@ -78,19 +78,19 @@ header {
     white-space: nowrap;
 }
 
-.menu-button .icon {
+.header-content .menu-button .icon {
     height: 1rem;
     width: 1rem;
 }
 
-.menu-button {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.header-content .menu-button {
     background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
 }
 
-.menu-button:hover {
+.header-content .menu-button:hover {
     background-color: #f6fafe;
 }
 
@@ -104,17 +104,45 @@ header {
     to {transform: translateX(100%);}
 }
 
-.mobile-side {
+.header-content .mobile-side {
+    align-items: center;
     animation: r-slide-in 0.25s ease-out forwards;
     background-color: #ffffff;
     border-left: 1px solid #d0d7de;
     border-radius: 16px 0 0 16px;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    padding: 0.75rem 1rem;
     position: fixed;
     right: 0;
     top: 0;
     width: 320px;
-    padding: 0.75rem 1rem;
 }
 
+.header-content .mobile-side .menu-button {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
+
+.header-content .mobile-side .mobile-nav {
+    width: 100%;
+}
+
+.header-content .mobile-side ul {
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-content .mobile-side .menu-item {
+    border-bottom: 1px solid #d0d7de;
+    width: 100%;
+}
+
+.header-content .mobile-side .menu-item a {
+    display: inline-block;
+    height: 3rem;
+    line-height: 2rem;
+    width: 100%;
+}
 
