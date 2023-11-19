@@ -1,5 +1,6 @@
 var navMenu = document.getElementById("nav-menu");
 var navButtonIn = document.getElementById("nav-button-in");
+var styleMobileSide = document.querySelector('.mobile-side');
 
 function checkWindowWidth() {
     var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -34,6 +35,11 @@ document.getElementById("nav-button-in").addEventListener("click", function(){
 });
 
 document.getElementById("nav-button-out").addEventListener("click", function(){
-    var styleMobileSide = document.querySelector('.mobile-side');
     styleMobileSide.style.animation = 'r-slide-out 0.25s ease-out forwards';
+});
+
+window.addEventListener('click', function (event) {
+    if (event.target.closest("#mobile-side") === null && event.target.closest("#nav-button-in") === null) {
+        styleMobileSide.style.animation = 'r-slide-out 0.25s ease-out forwards';
+    }
 });
